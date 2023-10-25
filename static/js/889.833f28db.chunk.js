@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcms_app=self.webpackChunkcms_app||[]).push([[889],{889:function(e,n,t){t.r(n);t(791);var p=t(184),d={border:"1px solid #ddd",borderRadius:"5px",padding:"20px",margin:"20px 0",textAlign:"center"};n.default=function(){return(0,p.jsx)("div",{style:d,children:(0,p.jsx)("p",{style:{fontSize:"20px",fontWeight:"bold"},children:"Dummy Chart Component"})})}}}]);
+//# sourceMappingURL=889.833f28db.chunk.js.map
