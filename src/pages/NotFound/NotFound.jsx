@@ -3,7 +3,7 @@ import './not-found.css'
 
 const NotFound = () => (
   <div className="not-found">
-    <h1>404 - Сторінку не знайдено</h1>
+    <h1>404 - Page is not found</h1>
   </div>
 );
 
