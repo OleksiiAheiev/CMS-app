@@ -6,7 +6,9 @@ const MainTemplate = ({ children }) => {
   return (
     <div className='wrapper'>
       <Header />
+      <div className='container'>
         {children}
+      </div>
     </div>
   );
 };

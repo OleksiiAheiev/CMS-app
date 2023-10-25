@@ -9,12 +9,15 @@ const listStyle = {
   borderRadius: '5px',
   padding: '20px',
   margin: '20px 0',
+  boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+  backgroundColor: '#ffffff',
 };
 
 const itemStyle = {
   backgroundColor: '#f2f2f2',
-  padding: '10px',
+  padding: '10px 20px',
   margin: '5px 0',
+  borderRadius: '5px',
 };
 
 const DummyList = () => (

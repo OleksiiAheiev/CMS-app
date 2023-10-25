@@ -1,12 +1,13 @@
 import React, { lazy, Suspense } from 'react';
 import Loading from '../pages/Loading/Loading';
+import NotFound from '../pages/NotFound/NotFound';
 
 const TabLoader = ({ path }) => {
   const Component = lazy(() => import(`./${path}`));
 
   return (
     <Suspense fallback={<Loading />}>
-      {Component ? <Component /> : <div>Error: Component not found</div>}
+      {Component ? <Component /> : <NotFound />}
     </Suspense>
   );
 };

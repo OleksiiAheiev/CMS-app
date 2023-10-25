@@ -6,6 +6,7 @@ const chartContainerStyle = {
   padding: '20px',
   margin: '20px 0',
   textAlign: 'center',
+  boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)'
 };
 
 const DummyChart = () => (

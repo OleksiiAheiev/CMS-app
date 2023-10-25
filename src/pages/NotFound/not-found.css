@@ -1,10 +1,23 @@
 .not-found {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  gap: 50px;
+  height: calc(100vh - 100px);
 }
 
 .not-found h1 {
   font-size: 24px;
+}
+
+.not-found h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.not-found h2 {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
 }
