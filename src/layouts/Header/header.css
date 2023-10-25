@@ -20,6 +20,10 @@
   padding: 3px;
 }
 
+.logo:hover {
+  background-color: #ff3a3a;
+}
+
 .nav {
   display: flex;
   align-items: center;

@@ -10,7 +10,9 @@ export default function Header() {
 
   return (
     <div className="header">
-      <Logo className="logo" />
+      <Link to='/'>
+        <Logo className="logo" />
+      </Link>
       <nav className="nav">
         <ul className="list">
           {tabsData.map((tab) => (
