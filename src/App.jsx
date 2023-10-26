@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState, useEffect } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import MainTemplate from './layouts/MainTemplate/MainTemplate';
@@ -6,9 +5,11 @@ import TabLoader from './components/TabLoader';
 import NotFound from './pages/NotFound/NotFound.jsx';
 import { DefaultTabRedirect } from './helper';
 import './App.css';
+import Loading from './pages/Loading/Loading';
 
 const App = () => {
   const [tabsData, setTabsData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,13 +22,18 @@ const App = () => {
 
         const data = await response.json();
         setTabsData(data);
+        setIsLoading(false);
       } catch (error) {
-        console.error('Error fetching tabs data:', error);
+        setIsLoading(false);
       }
     };
 
     fetchData();
   }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <Router>
