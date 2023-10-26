@@ -1,7 +1,6 @@
 import { Navigate, useLocation } from "react-router-dom";
-import tabsData from '../data/tabs.json';
 
-export const DefaultTabRedirect = () => {
+export const DefaultTabRedirect = ({ tabsData }) => {
   let location = useLocation();
   return <Navigate to={getTabPathFromLocation(location, tabsData)} />;
 };
