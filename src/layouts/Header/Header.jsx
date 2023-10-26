@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import tabsData from '../../data/tabs.json';
 import './header.css';
 import Logo from '../../components/icons/Logo';
 
-export default function Header() {
+export default function Header({ tabsData }) {
   const location = useLocation();
   const currentPath = location.pathname;
 
