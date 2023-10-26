@@ -7,6 +7,10 @@ export const DefaultTabRedirect = ({ tabsData }) => {
 
 const getTabPathFromLocation = (location, tabsData) => {
   const path = location.pathname.replace('/', '');
-  const selectedTab = tabsData.find((tab) => tab.id === path);
-  return selectedTab ? selectedTab.id : tabsData[0].id;
+  if (path === '') {
+    return tabsData.length > 0 ? tabsData[0].id : '';
+  } else {
+    const selectedTab = tabsData.find((tab) => tab.id === path);
+    return selectedTab ? selectedTab.id : '';
+  }
 };
